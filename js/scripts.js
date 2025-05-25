@@ -1,4 +1,4 @@
-const fancyBody = document.querySelector('.fancy-body');
+const fancyBody = document.querySelector('#fancy-body');
 
 if (fancyBody) {
   const profileImage = document.getElementById('candidate-image');
