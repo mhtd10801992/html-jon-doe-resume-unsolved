@@ -99,7 +99,7 @@
 }
 
 #fancy-body .light-part h1 .last-name {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 36px;
 }
 
@@ -114,8 +114,8 @@
 #fancy-body .hobbies-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  line-height: 28px;
+  gap: 17px;
+  line-height: 16px;
 }
 
 #fancy-body .bio-container h2,

@@ -45,28 +45,44 @@ if (fancyBody) {
   bioContainer.append(bioHeader);
   bioContainer.append(profileBio);
 
-  const skillsContainer = document.createElement('div');
-  skillsContainer.setAttribute('class', 'skills-container');
-  const skillsWrapper = document.createElement('span');
-  skillsWrapper.innerText = skillsHeader.innerText;
-  skillsHeader.innerText = '';
-  skillsHeader.append(skillsWrapper);
-  skillsContainer.append(skillsHeader);
-  skillsContainer.append(skillsList);
+  // Prevent duplicate skill container creation
+  let skillsContainer = document.querySelector('.skills-container');
+  if (!skillsContainer) {
+    skillsContainer = document.createElement('div');
+    skillsContainer.setAttribute('class', 'skills-container');
 
-  const hobbiesContainer = document.createElement('div');
-  hobbiesContainer.setAttribute('class', 'hobbies-container');
-  const hobbiesWrapper = document.createElement('span');
-  hobbiesWrapper.innerText = hobbiesHeader.innerText;
-  hobbiesHeader.innerText = '';
-  hobbiesHeader.append(hobbiesWrapper);
-  hobbiesContainer.append(hobbiesHeader);
-  hobbiesContainer.append(hobbiesList);
+    const skillsWrapper = document.createElement('span');
+    skillsWrapper.innerText = skillsHeader.innerText;
+    skillsHeader.innerText = '';
+    skillsHeader.append(skillsWrapper);
 
-  const contactsContainer = document.createElement('div');
-  contactsContainer.setAttribute('class', 'contacts-container');
-  contactsContainer.append(contactsHeader);
-  contactsContainer.append(contactsTable);
+    skillsContainer.append(skillsHeader);
+    skillsContainer.append(skillsList);
+  }
+
+  // Prevent duplicate hobbies container
+  let hobbiesContainer = document.querySelector('.hobbies-container');
+  if (!hobbiesContainer) {
+    hobbiesContainer = document.createElement('div');
+    hobbiesContainer.setAttribute('class', 'hobbies-container');
+
+    const hobbiesWrapper = document.createElement('span');
+    hobbiesWrapper.innerText = hobbiesHeader.innerText;
+    hobbiesHeader.innerText = '';
+    hobbiesHeader.append(hobbiesWrapper);
+
+    hobbiesContainer.append(hobbiesHeader);
+    hobbiesContainer.append(hobbiesList);
+  }
+
+  // Prevent duplicate contacts container
+  let contactsContainer = document.querySelector('.contacts-container');
+  if (!contactsContainer) {
+    contactsContainer = document.createElement('div');
+    contactsContainer.setAttribute('class', 'contacts-container');
+    contactsContainer.append(contactsHeader);
+    contactsContainer.append(contactsTable);
+  }
 
   const darkPart = document.createElement('div');
   darkPart.setAttribute('class', 'dark-part');
