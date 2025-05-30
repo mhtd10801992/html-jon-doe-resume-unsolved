@@ -3,40 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jon Doe's resume</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/scripts.js" defer></script>
+    <title>Jon Doe Resume</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body id="fancy-body" class="fancy-body">
+  <body id="fancy-body">
     <header>
       <h1 id="candidate-name">Jon Doe</h1>
+      <h2 id="candidate-desired-role">
+        <strong>Talented Frontend Developer</strong>
+      </h2>
     </header>
-    <section id="candidate-desired-role">
-      <h2><strong>Talented Frontend developer</strong></h2>
-    </section>
 
-    <section>
+    <div>
       <img
         id="candidate-image"
         src="./assets/avatars/fake_person.jpg"
         alt="Jon Doe's resume"
       />
-    </section>
+    </div>
 
-    <section id="about-me" class="bio-container">
-      <h2><span>About me</span></h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In adipisci
-        quaerat ducimus. Dolorum a eius aspernatur officia natus reprehenderit
-        repudiandae. Eum earum quae aut provident sequi et adipisci asperiores
-        voluptate veritatis? Temporibus nobis incidunt, reiciendis ipsa, sequi
-        explicabo harum vel molestias dolorem illum beatae quis ipsum sapiente,
-        iste dicta maiores.
+    <section id="about-me">
+      <h2><strong>About Me</strong></h2>
+      <p class="candidate-bio">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        sapiente iure ex sed illum error. Saepe dolorum excepturi tenetur
+        tempore assumenda necessitatibus accusantium suscipit pariatur!
       </p>
     </section>
+
     <section id="skills">
       <div class="skills-container">
-        <h2><span>My Skills</span></h2>
+        <h2><span>Skills</span></h2>
         <ol id="skills-list">
           <li>HTML</li>
           <li>CSS</li>
@@ -47,11 +44,10 @@
         </ol>
       </div>
     </section>
-    <div style="height: 40px"></div>
 
     <section id="hobbies">
       <div class="hobbies-container">
-        <h2><span>My Hobbies</span></h2>
+        <h2><span>Hobbies</span></h2>
         <ul id="hobbies-list">
           <li>Cross Stitching</li>
           <li>Knitting</li>
@@ -60,42 +56,42 @@
         </ul>
       </div>
     </section>
-    <div style="height: 40px"></div>
 
     <section id="contacts">
       <h2>Contact Me</h2>
+      <table class="contacts-table" border="0">
+        <tr>
+          <td><b>Discord</b></td>
+          <td>
+            <a href="https://discord.gg/YOUR_SERVER_CODE" target="_blank">
+              Join My Discord
+            </a>
+          </td>
+        </tr>
 
-      <table class="contacts-table">
         <tr>
-          <td>Discord</td>
+          <td><b>LinkedIn</b></td>
           <td>
-            <a href="https://discord.com/channels/@me" target="_blank"
-              >Join My Discord</a
-            >
+            <a href="https://www.linkedin.com/in/user" target="_blank">
+              LinkedIn Profile
+            </a>
           </td>
         </tr>
         <tr>
-          <td>Email</td>
-          <td><a href="mailto:mohitdas@user.com">Email Me</a></td>
+          <td><b>Email</b></td>
+          <td><a href="mailto:user@test.com">user@test.com</a></td>
         </tr>
         <tr>
-          <td>GitHub</td>
+          <td><b>GitHub</b></td>
           <td>
-            <a href="https://github.com/mhtd10801992" target="_blank"
-              >GitHub Profile</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>LinkedIn</td>
-          <td>
-            <a href="https://www.linkedin.com/in/mohitadas/" target="_blank"
-              >LinkedIn Profile</a
-            >
+            <a href="https://github.com/mhtd10801992" target="_blank">
+              GitHub Profile
+            </a>
           </td>
         </tr>
       </table>
     </section>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
-
